@@ -1,24 +1,16 @@
-<<<<<<< HEAD
-import React from 'react';
-import Header from './header';
+import React from "react";
+import Header from "./header";
+import Home from "./components/Home";
+import Cards from "./components/cards";
 
 function App() {
-  return (
-    <Header />
-
-  )
-=======
-import Home from './components/Home';
-
-function App() {
-  return (
+  return(
     <>
-    <Home />
+    {/* <Header /> */}
+    {/* <Home /> */}
+    <Cards/>
     </>
-      );
->>>>>>> 9f0ba6c44a5e7d73475726eab2ece251c9b84f4a
+  )
 }
 
 export default App;
-  
-    

@@ -1,6 +1,9 @@
 import React from "react";
 import "./Home.css";
 import { FaArrowRight } from "react-icons/fa";
+import img1 from '../Assets/images/aws-img1.png';
+import img2 from '../Assets/images/azure-img2.png';
+import img3 from '../Assets/images/gcp-img3.jpg';
 const Home = () => {
   return (
     <>
@@ -24,10 +27,30 @@ const Home = () => {
           <button className="btn btn-primary">
             Book a FinOps Assessment <FaArrowRight />
           </button>
+
         </div>
       </div>
-    </>
-  );
+
+      <div class="logo-container">
+        <div class="logo">
+          <img src={img1} alt="AWS"/>
+            <p>AWS</p>
+        </div>
+
+        <div class="logo">
+          <img src={img2} alt="Azure"/>
+            <p>Azure</p>
+        </div>
+
+        <div class="logo">
+          <img src={img3} alt="GCP"/>
+            <p>GCP</p>
+        </div>
+        </div>
+
+
+      </>
+      );
 };
 
 export default Home;
