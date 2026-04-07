@@ -1,0 +1,63 @@
+/* Header */
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+}
+
+/* Logo */
+.logo h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #270ba0;
+}
+
+/* Center Menu */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav-links li:hover {
+  color: #2563eb;
+}
+
+/* Right Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn {
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cta-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
