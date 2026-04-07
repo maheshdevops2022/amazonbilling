@@ -1,11 +1,15 @@
-import Home from './components/Home';
+import Certified from "./components/certified";
+import Home from "./components/Home";
+import Header from "./header";
 
 function App() {
   return (
     <>
-    <Home />
+      <Header />
+      <Home />
+      <Certified />
     </>
-      );
+  );
 }
 
 export default App;

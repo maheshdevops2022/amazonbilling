@@ -1,0 +1,127 @@
+ .trusted-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #0f121a;
+}
+
+/* Heading 0f172a*/
+.trusted-heading {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+/* Cards row */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card style (rectangle like C3Ops) */
+.card {
+  background: rgba(74, 39, 146, 0.874);
+  width: 220px;
+  aspect-ratio: 5 / 2;
+
+  border-radius: 10px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #22c55e;
+}
+
+/* Title */
+.card h4 {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Subtitle */
+.card p {
+  color: #94a3b8;
+  font-size: 14px;
+} 
+
+
+
+
+
+/* Slider */
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 20); /* adjust based on items */
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #333;
+  background: #f8f8f8;
+  margin: 0 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.slide:hover {
+  background: #0b65f8;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.clients-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+
+
+}
+
+.clients-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.clients-section p {
+  color: #777;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
