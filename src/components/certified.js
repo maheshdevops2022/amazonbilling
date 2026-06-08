@@ -1,5 +1,5 @@
 import React from "react";
-import "./certified.css";
+import "../Assets/certified.css";
 
 const sliders = [
   { id: 1, title: "Enterprise Ready", paragraph: "SOC 2 Compliant" },

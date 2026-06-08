@@ -1,0 +1,179 @@
+.pricing-page{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 0;
+}
+
+.container{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.container h3{
+    color:#16a34a;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.container h1{
+    font-size:64px;
+    line-height:1.1;
+    font-weight:700;
+    color:#111827;
+    max-width:900px;
+    margin:auto;
+}
+
+.container p{
+    font-size:20px;
+    color:#6b7280;
+    max-width:700px;
+    margin:30px auto 0;
+}
+
+/* Green box */
+
+.card-container{
+    background:#ecfdf3;
+    border-radius:30px;
+    padding:60px;
+    margin-bottom:70px;
+}
+
+.card-container h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.content ul{
+    list-style:none;
+}
+
+.content li{
+    margin-bottom:25px;
+    font-size:18px;
+    line-height:1.7;
+    color:#374151;
+}
+
+/* Feature cards */
+
+.card-section{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.choose-card{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:20px;
+    padding:35px;
+}
+
+.choose-card h4{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.choose-card p{
+    color:#6b7280;
+    line-height:1.8;
+}
+
+.choose-card:hover{
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transform:translateY(-5px);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .container h1{
+        font-size:38px;
+    }
+
+    .content{
+        grid-template-columns:1fr;
+    }
+
+    .card-section{
+        grid-template-columns:1fr;
+    }
+
+    .card-container{
+        padding:30px;
+    }
+}
+
+
+.card-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: #ecfdf3;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.tick {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: #16a34a;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.why-choose{
+  text-align:center;
+  margin:80px 0 50px;
+}
+
+.why-choose h2{
+  color:#16a34a;
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.why-choose h1{
+  font-size:48px;
+  font-weight:700;
+}
+
+.why-choose span{
+  color:#16a34a;
+}

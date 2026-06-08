@@ -3,6 +3,7 @@ import React from "react";
 import img1 from "../Assets/icons/FinOps.png";
 import img2 from "../Assets/icons/FinOps2.png";
 import img3 from "../Assets/icons/finops3.png";
+import "../Assets/card.css";
 
 function Cards() {
   return (

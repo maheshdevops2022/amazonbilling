@@ -1,30 +1,65 @@
-<<<<<<< HEAD
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./header";
 import Home from "./components/Home";
 import Cards from "./components/cards";
-=======
 import Certified from "./components/certified";
-import Home from "./components/Home";
-import Header from "./header";
->>>>>>> 7f145aeba6e7636d21b049378410c8d8a53c468d
+import Review from "./components/Review";
+//import SMS from "./components/SMS";
+import Assessment from "./components/Assesment";
+import Footer from "./components/Footer";
+import Platform from "./components/PlatForm";
+import Trust from "./components/Trust";
+import Pricing from "./components/Pricing";
+import Contact from "./components/contact";
 
 function App() {
-  return(
+  return (
     <>
-<<<<<<< HEAD
-    {/* <Header /> */}
-    {/* <Home /> */}
-    <Cards/>
-    </>
-  )
-=======
-      <Header />
-      <Home />
-      <Certified />
+      <BrowserRouter>
+        <Header />
+
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Cards />
+                <Certified />
+                <Review />
+                <Assessment />
+              </>
+            }
+          />
+
+          <Route
+            path="/platform"
+            element={
+              <>
+                <Platform />
+                <Trust />
+              </>
+            }
+          />
+
+          <Route path="/pricing" element={
+            <>
+            <Pricing />
+            </>
+          } />
+
+          <Route path="/contact" element={
+            <>
+            <Contact/>
+            </>
+          } />
+        </Routes>
+      </BrowserRouter>
+
+      <Footer />
     </>
   );
->>>>>>> 7f145aeba6e7636d21b049378410c8d8a53c468d
 }
 
 export default App;

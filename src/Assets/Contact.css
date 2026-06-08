@@ -1,0 +1,224 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #111827;
+}
+
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+.contact-page {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 60px;
+}
+
+.contact-header span {
+  color: #16a34a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.contact-header h1 {
+  font-size: 64px;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+.green {
+  color: #16a34a;
+}
+
+.contact-header p {
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+/* ==========================
+   CONTACT CARDS
+========================== */
+
+.contact-right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.contact-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 30px;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  background: #ecfdf3;
+  color: #16a34a;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-card h3 {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-card h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* ==========================
+   FREE ASSESSMENT
+========================== */
+
+.card-container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 60px;
+  background: #ecfdf3;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.card-container h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.card-container h1 span {
+  color: #16a34a;
+}
+
+.card-container > p {
+  max-width: 750px;
+  margin: 0 auto 30px;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.card-container button {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-container button:hover {
+  background: #15803d;
+}
+
+/* ==========================
+   SERVICES
+========================== */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  padding: 25px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h6 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.service-card span {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* ==========================
+   FAQ SECTION
+========================== */
+
+.questions {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.questions div {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.questions div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.questions h6 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}

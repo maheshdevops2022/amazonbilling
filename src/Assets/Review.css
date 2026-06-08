@@ -1,0 +1,126 @@
+/* ===== Container ===== */
+.container {
+  padding: 70px 20px;
+  background: #f9fafb;
+  text-align: center;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* ===== Header ===== */
+.header-container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+.header-container p {
+  color: #6b7280;
+  margin-top: 8px;
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+
+/* ===== Wrapper (4 cards in one row) ===== */
+.review-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 25px;
+}
+
+/* ===== Card ===== */
+.reviews {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+
+  /* Equal height fix */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 230px;
+}
+
+/* Hover Effect */
+.reviews:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Stars ===== */
+.stars {
+  color: #f59e0b;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* ===== Review Text ===== */
+.desc {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+  flex-grow: 1; /* keeps equal spacing */
+  margin-bottom: 15px;
+}
+
+/* ===== Verified Badge ===== */
+.badge {
+  display: inline-block;
+  background: #e6f4ea;
+  color: #16a34a;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  width: fit-content;
+}
+
+/* ===== User Section ===== */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Avatar */
+.avatar {
+  width: 35px;
+  height: 35px;
+  background: #0f8504;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Name */
+.user h5 {
+  margin: 0;
+  font-size: 15px;
+  color: #111;
+}
+
+/* Role */
+.user p {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .review-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .review-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

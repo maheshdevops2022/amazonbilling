@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "../Assets/Home.css";
 import { FaArrowRight } from "react-icons/fa";
 import img1 from '../Assets/images/aws-img1.png';
 import img2 from '../Assets/images/azure-img2.png';
