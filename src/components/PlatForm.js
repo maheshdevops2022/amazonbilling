@@ -13,8 +13,8 @@ const Platform = () => {
         </h1>
 
         <p>
-          Advanced FinOps software combined with expert services to deliver
-          sustainable cloud savings.
+          Advanced FinOps software combined with expert services to deliver sustainable cloud
+          savings.
         </p>
       </div>
 
@@ -58,45 +58,45 @@ const Platform = () => {
       </div>
 
       {/* Methodology */}
-     <div className="methodology-section">
-  <h1>Our Three-Phase Methodology</h1>
+      <div className="methodology-section">
+        <h1>Our Three-Phase Methodology</h1>
 
-  <div className="methodology-cards">
-    <div className="card">
-      <h2>Phase 1: Discovery</h2>
-      <ul>
-        <li>Cloud spend analysis & anomaly detection</li>
-        <li>Immediate optimization opportunities</li>
-        <li>Strategic savings roadmap</li>
-      </ul>
-    </div>
+        <div className="methodology-cards">
+          <div className="card">
+            <h2>Phase 1: Discovery</h2>
+            <ul>
+              <li>Cloud spend analysis & anomaly detection</li>
+              <li>Immediate optimization opportunities</li>
+              <li>Strategic savings roadmap</li>
+            </ul>
+          </div>
 
-    <div className="card">
-      <h2>Phase 2: Optimization</h2>
-      <ul>
-        <li>Resource rightsizing automation</li>
-        <li>Commitment-based discount optimization</li>
-        <li>Advanced cost allocation framework</li>
-      </ul>
-    </div>
+          <div className="card">
+            <h2>Phase 2: Optimization</h2>
+            <ul>
+              <li>Resource rightsizing automation</li>
+              <li>Commitment-based discount optimization</li>
+              <li>Advanced cost allocation framework</li>
+            </ul>
+          </div>
 
-    <div className="card">
-      <h2>Phase 3: Governance</h2>
-      <ul>
-        <li>Team enablement & knowledge transfer</li>
-        <li>Policy framework & automated controls</li>
-        <li>Self-sustaining optimization culture</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-        <div className="integration-banner">
-          <h3>
-            Seamless Integration with AWS, Azure, GCP, Terraform, Kubernetes,
-            Jenkins, GitHub Actions, Slack, Datadog and more.
-          </h3>
+          <div className="card">
+            <h2>Phase 3: Governance</h2>
+            <ul>
+              <li>Team enablement & knowledge transfer</li>
+              <li>Policy framework & automated controls</li>
+              <li>Self-sustaining optimization culture</li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div className="integration-banner">
+        <p>
+          <strong>Seamless Integration:</strong> with AWS, Azure, GCP, Terraform, Kubernetes, Jenkins, GitHub Actions,
+          Slack, Datadog and more.
+        </p>
+      </div>
     </section>
   );
 };

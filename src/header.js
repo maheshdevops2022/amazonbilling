@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <nav className="navbar">
         <div className="logo">
-          <h2>UJR Technologies</h2>
+          <h2>Cloudwise</h2>
         </div>
 
         <ul className="nav-links">
