@@ -9,12 +9,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   color: #111827;
+  background: #ffffff;
 }
 
 /* ==========================
-   CONTACT SECTION
+   CONTACT PAGE
 ========================== */
 
 .contact-page {
@@ -23,23 +24,34 @@ body {
   padding: 0 20px;
 }
 
+/* ==========================
+   HEADER
+========================== */
+
 .contact-header {
   text-align: center;
   max-width: 850px;
-  margin: 0 auto 60px;
+  margin: 0 auto 70px;
 }
 
 .contact-header span {
+  display: inline-block;
+  background: #ecfdf3;
   color: #16a34a;
+
+  padding: 10px 20px;
+  border-radius: 30px;
+
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .contact-header h1 {
-  font-size: 64px;
-  margin: 20px 0;
-  line-height: 1.1;
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 25px 0;
 }
 
 .green {
@@ -63,41 +75,73 @@ body {
 }
 
 .contact-card {
-  background: #fff;
+  background: white;
   border: 1px solid #e5e7eb;
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 30px;
-  transition: 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.35s ease;
+}
+
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: linear-gradient(
+    90deg,
+    #16a34a,
+    #22c55e
+  );
 }
 
 .contact-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transform: translateY(-10px);
+  border-color: #22c55e;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
+
   background: #ecfdf3;
   color: #16a34a;
-  border-radius: 14px;
+
+  border-radius: 18px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 24px;
+  font-size: 26px;
+
   margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover .icon {
+  transform: scale(1.1);
 }
 
 .contact-card h3 {
   color: #6b7280;
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .contact-card h4 {
   font-size: 20px;
+  color: green;
   margin-bottom: 12px;
 }
 
@@ -112,43 +156,80 @@ body {
 
 .card-container {
   max-width: 1200px;
-  margin: 80px auto;
-  padding: 60px;
-  background: #ecfdf3;
+
+  margin: 90px auto;
+
+  padding: 70px 50px;
+
+  background: linear-gradient(
+    135deg,
+    #ecfdf3,
+    #f0fdf4
+  );
+
   border-radius: 30px;
+
   text-align: center;
+
+  border: 1px solid #d1fae5;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,.05);
 }
 
 .card-container h1 {
-  font-size: 50px;
+  font-size: clamp(32px, 5vw, 52px);
   margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .card-container h1 span {
   color: #16a34a;
+  font-weight: 800;
+  font-size: 50px;
 }
 
 .card-container > p {
-  max-width: 750px;
-  margin: 0 auto 30px;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 35px;
+
   color: #6b7280;
   line-height: 1.8;
 }
 
 .card-container button {
-  background: #16a34a;
+  background: linear-gradient(
+    135deg,
+    #16a34a,
+    #22c55e
+  );
+
   color: white;
   border: none;
-  padding: 15px 30px;
-  border-radius: 10px;
-  cursor: pointer;
+
+  padding: 16px 34px;
+
+  border-radius: 12px;
+
   font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
   margin-bottom: 50px;
-  transition: 0.3s;
+
+  transition: all .3s ease;
 }
 
 .card-container button:hover {
-  background: #15803d;
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 30px rgba(
+    34,
+    197,
+    94,
+    0.25
+  );
 }
 
 /* ==========================
@@ -162,17 +243,30 @@ body {
 }
 
 .service-card {
-  background: white;
+  background: linear-gradient(
+    135deg,
+    #ecfdf3,
+    #f0fdf4
+  );
   border-radius: 20px;
   border: 1px solid #e5e7eb;
+
   padding: 25px;
+
   text-align: left;
-  transition: 0.3s;
+
+  transition: all .3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+
+  box-shadow: 0 15px 30px rgba(
+    0,
+    0,
+    0,
+    0.08
+  );
 }
 
 .service-card h6 {
@@ -183,42 +277,137 @@ body {
 .service-card p {
   color: #6b7280;
   line-height: 1.7;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .service-card span {
   color: #16a34a;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* ==========================
-   FAQ SECTION
+   FAQ
 ========================== */
 
 .questions {
   max-width: 1200px;
-  margin: 80px auto;
+  margin: 90px auto;
+
   padding: 0 20px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   gap: 24px;
 }
 
 .questions div {
-  background: white;
+  background: #b9f1c3;
+
   border: 1px solid #e5e7eb;
+  border-left: 5px solid #16a34a;
+
   border-radius: 20px;
+
   padding: 30px;
-  transition: 0.3s;
+
+  transition: all .3s ease;
 }
 
 .questions div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+
+  box-shadow: 0 15px 35px rgba(
+    0,
+    0,
+    0,
+    0.08
+  );
 }
 
 .questions h6 {
   font-size: 20px;
   margin-bottom: 12px;
+  color: #111827;
+}
+
+.questions p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 992px) {
+  .contact-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .contact-page {
+    margin: 50px auto;
+  }
+
+  .contact-right {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card,
+  .service-card,
+  .questions div {
+    text-align: center;
+  }
+
+  .icon {
+    margin: 0 auto 20px;
+  }
+
+  .card-container {
+    padding: 35px 20px;
+    border-radius: 20px;
+  }
+
+  .card-container button {
+    width: 100%;
+  }
+
+  .questions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 480px) {
+  .contact-header p,
+  .card-container > p,
+  .questions p,
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .contact-card,
+  .service-card,
+  .questions div {
+    padding: 20px;
+  }
 }

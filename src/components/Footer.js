@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
 
         <div className="footer-brand">
-          <h2>C3Ops.io</h2>
+          <h2>Cloudwise.io</h2>
           <p>
             Platform + People = Results. Helping organizations reduce
             cloud costs by 20-30% through FinOps excellence.

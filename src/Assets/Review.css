@@ -1,126 +1,225 @@
 /* ===== Container ===== */
+
 .container {
   padding: 70px 20px;
   background: #f9fafb;
   text-align: center;
-  font-family: "Inter", Arial, sans-serif;
 }
 
 /* ===== Header ===== */
-.header-container h1 {
-  font-size: 32px;
+
+.header-container h3 {
+  color: #16a34a;
+  font-size: 14px;
   font-weight: 700;
-  color: #111;
-}
-
-.header-container p {
-  color: #6b7280;
-  margin-top: 8px;
-  margin-bottom: 50px;
-  font-size: 15px;
-}
-
-/* ===== Wrapper (4 cards in one row) ===== */
-.review-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 25px;
-}
-
-/* ===== Card ===== */
-.reviews {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 16px;
-  text-align: left;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
-
-  /* Equal height fix */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 230px;
-}
-
-/* Hover Effect */
-.reviews:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* ===== Stars ===== */
-.stars {
-  color: #f59e0b;
-  font-size: 16px;
+  letter-spacing: 1px;
   margin-bottom: 10px;
 }
 
-/* ===== Review Text ===== */
-.desc {
-  font-size: 14px;
-  color: #374151;
-  line-height: 1.6;
-  flex-grow: 1; /* keeps equal spacing */
+.header-container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.header-container h1 span {
+  color: green;
+}
+
+.header-container > p {
+  color: #6b7280;
+  font-size: 55px;
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+/* ===== Review Grid ===== */
+
+.review-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+/* ===== Card ===== */
+
+.reviews {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 18px;
+  text-align: left;
+
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 280px;
+
+  transition: all 0.3s ease;
+}
+
+.reviews:hover {
+  transform: translateY(-8px);
+  border-color: #22c55e;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Quote Icon ===== */
+
+.quote-icon {
+  font-size: 30px;
+  color: #16a34a;
   margin-bottom: 15px;
 }
 
-/* ===== Verified Badge ===== */
-.badge {
-  display: inline-block;
-  background: #e6f4ea;
-  color: #16a34a;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 12px;
+/* ===== Stars ===== */
+
+.stars {
+  display: flex;
+  gap: 4px;
+  color: #f59e0b;
+  font-size: 16px;
   margin-bottom: 15px;
+}
+
+/* ===== Review Text ===== */
+
+.desc {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+/* ===== Badge ===== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
   width: fit-content;
+
+  background: #ecfdf5;
+  color: #16a34a;
+
+  padding: 6px 12px;
+  border-radius: 30px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  margin-bottom: 18px;
+}
+
+.badge svg {
+  font-size: 13px;
 }
 
 /* ===== User Section ===== */
+
 .user {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  margin-top: auto;
 }
 
-/* Avatar */
 .avatar {
-  width: 35px;
-  height: 35px;
-  background: #0f8504;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #16a34a,
+    #22c55e
+  );
+
+  color: white;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  flex-shrink: 0;
 }
 
-/* Name */
 .user h5 {
-  margin: 0;
   font-size: 15px;
-  color: #111;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 3px;
 }
 
-/* Role */
 .user p {
   margin: 0;
   font-size: 12px;
   color: #6b7280;
 }
 
-/* ===== Responsive ===== */
+/* ===== Tablet ===== */
+
 @media (max-width: 1024px) {
   .review-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 50px 15px;
+  }
+
+  .header-container h1 {
+    font-size: 28px;
+  }
+
+  .header-container > p {
+    margin-bottom: 30px;
+  }
+
   .review-wrapper {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .reviews {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .desc {
+    font-size: 13px;
+  }
+}
+
+/* ===== Small Mobile ===== */
+
+@media (max-width: 480px) {
+  .header-container h1 {
+    font-size: 24px;
+  }
+
+  .reviews {
+    padding: 18px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
   }
 }

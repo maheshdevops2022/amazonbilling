@@ -1,127 +1,221 @@
- .trusted-section {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   TRUSTED SECTION
+=========================== */
+
+.trusted-section {
+  padding: 70px 20px;
+  background: #f8fafc;
   text-align: center;
-  padding: 60px 20px;
-  background: #0f121a;
 }
 
-/* Heading 0f172a*/
 .trusted-heading {
-  color: #ffffff;
   font-size: 12px;
+  font-weight: 700;
   letter-spacing: 2px;
-  margin-bottom: 30px;
+  color: black;
+  margin-bottom: 40px;
 }
 
-/* Cards row */
+/* Cards */
+
 .card-wrapper {
+  max-width: 1400px;
+  margin: auto;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
-/* Card style (rectangle like C3Ops) */
 .card {
-  background: rgba(74, 39, 146, 0.874);
   width: 220px;
-  aspect-ratio: 5 / 2;
-
-  border-radius: 10px;
-  padding: 15px;
+  min-height: 140px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  border: 1px solid rgba(255, 255, 255, 0.1);
-
-  transition: 0.3s ease;
-}
-
-/* Hover effect */
-.card:hover {
-  transform: translateY(-5px);
-  border-color: #22c55e;
-}
-
-/* Title */
-.card h4 {
-  color: #ffffff;
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-/* Subtitle */
-.card p {
-  color: #94a3b8;
-  font-size: 14px;
-} 
-
-
-
-
-
-/* Slider */
-.slider {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.slide-track {
-  display: flex;
-  width: calc(250px * 20); /* adjust based on items */
-  animation: scroll 40s linear infinite;
-}
-
-.slide {
-  width: 200px;
-  height: 80px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  color: #333;
-  background: #f8f8f8;
-  margin: 0 10px;
-  border-radius: 10px;
-  transition: 0.3s;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.slide:hover {
-  background: #0b65f8;
-  color: white;
-  transform: scale(1.05);
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #22c55e;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Animation */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.card-icon {
+  font-size: 34px;
+  color: #16a34a;
+  margin-bottom: 12px;
 }
 
+.card h6 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
 
+.card p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* ===========================
+   CLIENTS SECTION
+=========================== */
 
 .clients-section {
-  text-align: center;
-  padding: 60px 20px;
+  padding: 70px 20px;
   background: #ffffff;
-
-
+  text-align: center;
 }
 
 .clients-section h3 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
+  color: #0f172a;
   margin-bottom: 10px;
 }
 
 .clients-section p {
-  color: #777;
-  margin-bottom: 40px;
   font-size: 16px;
-  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* Slider */
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.slide {
+  min-width: 220px;
+  height: 80px;
+  margin: 0 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  font-size: 15px;
+  font-weight: 700;
+  color: #334155;
+
+  transition: all 0.3s ease;
+}
+
+.slide:hover {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+  transform: translateY(-4px);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 992px) {
+  .card {
+    width: 200px;
+  }
+
+  .slide {
+    min-width: 180px;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+  .trusted-section,
+  .clients-section {
+    padding: 50px 15px;
+  }
+
+  .card-wrapper {
+    gap: 15px;
+  }
+
+  .card {
+    width: calc(50% - 8px);
+    min-height: 130px;
+  }
+
+  .clients-section h3 {
+    font-size: 26px;
+  }
+
+  .clients-section p {
+    font-size: 14px;
+  }
+
+  .slide {
+    min-width: 160px;
+    height: 70px;
+    font-size: 14px;
+  }
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-icon {
+    font-size: 30px;
+  }
+
+  .slide {
+    min-width: 140px;
+    height: 60px;
+    font-size: 13px;
+  }
+
+  .clients-section h3 {
+    font-size: 22px;
+  }
 }

@@ -88,13 +88,23 @@ const Platform = () => {
               <li>Self-sustaining optimization culture</li>
             </ul>
           </div>
+
+          <div className="card">
+            <h2>Phase 4: Improvement</h2>
+
+            <ul>
+              <li>Ongoing cost optimization reviews</li>
+              <li>Advanced analytics & forecasting</li>
+              <li>Continuous governance enhancement</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className="integration-banner">
         <p>
-          <strong>Seamless Integration:</strong> with AWS, Azure, GCP, Terraform, Kubernetes, Jenkins, GitHub Actions,
-          Slack, Datadog and more.
+          <strong>Seamless Integration:</strong> with AWS, Azure, GCP, Terraform, Kubernetes,
+          Jenkins, GitHub Actions, Slack, Datadog and more.
         </p>
       </div>
     </section>

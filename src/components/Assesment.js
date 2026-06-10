@@ -45,13 +45,13 @@ const Assessment = () => {
             <div className="trust-info">
               <p>✓ No Commitment</p>
               <p>✓ No Risk</p>
-              <p>✓ Results in 2 Weeks</p>
+              <p>✓ Results in 14 days</p>
             </div>
 
             <div className="contact">
-              <h4>C3Ops.io</h4>
+              <h4>Cloudwise.io</h4>
               <p>Cloud Cost Optimization Platform</p>
-              <p>support@c3ops.io</p>
+              <p>support@cloudwise.io</p>
             </div>
           </div>
         </div>

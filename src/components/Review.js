@@ -6,7 +6,7 @@ import ReviewCard from "./ReviewCard";
 const reviews = [
   {
     review:
-      "C3Ops reduced our cloud costs significantly while giving us deep, actionable insights. It’s an essential tool for any cloud-driven team.",
+      "Cloudwise reduced our cloud costs significantly while giving us deep, actionable insights. It’s an essential tool for any cloud-driven team.",
     name: "Jhon",
     role: "Manager,Capgemini",
     rating: 5,

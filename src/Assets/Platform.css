@@ -31,16 +31,19 @@
   font-size: 54px;
   margin: 20px 0;
   color: #111827;
+  line-height: 1.2;
 }
 
 .platform-header h1 span {
-  color: green;
+  color: #16a34a;
 }
 
 .platform-header p {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.8;
-  color: black;
+  color: #475569;
+  max-width: 750px;
+  margin: auto;
 }
 
 /* Feature Cards */
@@ -56,12 +59,14 @@
   background: #fff;
   padding: 35px;
   border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
 }
 
 .platform-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
 .icon {
@@ -79,6 +84,7 @@
 .platform-card h2 {
   margin-bottom: 20px;
   color: #111827;
+  font-size: 24px;
 }
 
 .platform-card ul {
@@ -87,8 +93,10 @@
 
 .platform-card li {
   margin-bottom: 14px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #4b5563;
+  display: flex;
+  align-items: flex-start;
 }
 
 .platform-card li::before {
@@ -109,66 +117,55 @@
   font-size: 48px;
   font-weight: 700;
   color: #111827;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .methodology-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
 }
 
 .card {
-  flex: 1;
-  min-width: 320px;
-  max-width: 380px;
-
-  background: white;
+  background: #ffffff;
   border-radius: 20px;
-  padding: 35px;
-  position: relative;
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
-  /* transition: all 0.3s ease; */
-
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
 }
 
-/* .card:hover {
-  transform: translateY(-10px);
-} */
-
-.phase-number {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-
-  font-size: 60px;
-  font-weight: 800;
-  color: rgba(37, 99, 235, 0.08);
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
-  color: green;
-  margin-bottom: 20px;
+  color: #16a34a;
   font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .card ul {
-  padding: 0;
   list-style: none;
+  padding: 0;
+  flex: 1;
 }
 
 .card li {
   margin-bottom: 15px;
-  line-height: 1.7;
-  color: black;
+  line-height: 1.8;
+  color: #475569;
+  display: flex;
+  align-items: flex-start;
 }
 
 .card li::before {
   content: "✓";
-  color: green;
+  color: #16a34a;
   font-weight: bold;
   margin-right: 10px;
 }
@@ -177,50 +174,63 @@
 
 .integration-banner {
   max-width: 900px;
-  margin: 30px auto;
-  padding: 16px 24px;
-  background: #f8fafc;
-  border: 18px solid #e2e8f0;
-  border-radius: 12px;
+  margin: 60px auto 0;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 .integration-banner p {
-  margin: 0;
   color: #475569;
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
 .integration-banner strong {
-  color: #0f172a;
+  color: #111827;
   font-weight: 700;
 }
-/* Responsive */
+
+/* ==========================
+   TABLET
+========================== */
 
 @media (max-width: 992px) {
-  .platform-cards,
-  .methodology-cards {
-    grid-template-columns: 1fr;
+  .platform {
+    padding: 70px 30px;
   }
 
   .platform-header h1 {
-    font-size: 40px;
+    font-size: 42px;
   }
 
-  .methodology-section h1 {
-    font-size: 36px;
-  }
-
-  .integration-banner h3 {
+  .platform-header p {
     font-size: 18px;
+  }
+
+  .platform-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .methodology-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* ==========================
+   MOBILE
+========================== */
+
 @media (max-width: 768px) {
   .platform {
-    padding: 70px 20px;
+    padding: 60px 20px;
+  }
+
+  .platform-header {
+    margin-bottom: 40px;
   }
 
   .platform-header h1 {
@@ -229,10 +239,99 @@
 
   .platform-header p {
     font-size: 16px;
+    line-height: 1.7;
   }
 
-  .platform-card,
+  .platform-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+
+  .platform-card {
+    padding: 24px;
+  }
+
+  .platform-card h2 {
+    font-size: 20px;
+  }
+
+  .platform-card li {
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .methodology-section {
+    margin-top: 60px;
+  }
+
+  .methodology-section h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .methodology-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .card {
-    padding: 25px;
+    padding: 24px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card li {
+    font-size: 14px;
+  }
+
+  .integration-banner {
+    padding: 15px;
+    margin-top: 40px;
+  }
+
+  .integration-banner p {
+    font-size: 14px;
+  }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+
+@media (max-width: 480px) {
+  .platform {
+    padding: 50px 15px;
+  }
+
+  .platform-header h1 {
+    font-size: 28px;
+  }
+
+  .platform-header p {
+    font-size: 14px;
+  }
+
+  .platform-card {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .integration-banner {
+    padding: 12px;
+  }
+
+  .integration-banner p {
+    font-size: 13px;
   }
 }

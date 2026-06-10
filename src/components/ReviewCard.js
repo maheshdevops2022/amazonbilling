@@ -1,21 +1,34 @@
 import React from "react";
-import "../Assets/Review.css";
-const ReviewCard = ({ data }) => {
-  const { review, name, role, rating } = data;
+import { FaStar, FaQuoteLeft, FaCheckCircle } from "react-icons/fa";
 
+const ReviewCard = ({ data }) => {
   return (
     <div className="reviews">
-      <div className="stars">★★★★★</div>
+      <div className="quote-icon">
+        <FaQuoteLeft />
+      </div>
 
-      <p className="desc">{review}</p>
+      <div className="stars">
+        {[...Array(data.rating)].map((_, i) => (
+          <FaStar key={i} />
+        ))}
+      </div>
 
-      <span className="badge">✔ Verified Review</span>
+      <p className="desc">{data.review}</p>
+
+      <div className="badge">
+        <FaCheckCircle />
+        <span>Verified Customer</span>
+      </div>
 
       <div className="user">
-        <div className="avatar">{name.charAt(0)}</div>
+        <div className="avatar">
+          {data.name.charAt(0)}
+        </div>
+
         <div>
-          <h5>{name}</h5>
-          <p>{role}</p>
+          <h5>{data.name}</h5>
+          <p>{data.role}</p>
         </div>
       </div>
     </div>

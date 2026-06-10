@@ -32,7 +32,7 @@ const Contact = () => {
               <FaEnvelope />
             </div>
             <h3>Email Us</h3>
-            <h4>info@c3ops.io</h4>
+            <h4>info@cloudwise.io</h4>
             <p>Get in touch for consultations and support</p>
           </div>
 
@@ -41,7 +41,7 @@ const Contact = () => {
               <FaPhoneAlt />
             </div>
             <h3>Call Us</h3>
-            <h4>+91 9390361519</h4>
+            <h4>+91 7095444017</h4>
             <p>Mon-Fri, 9AM-6PM (IST & PST)</p>
           </div>
 

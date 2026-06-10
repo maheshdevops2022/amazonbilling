@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import Cards from "./components/cards";
 import Certified from "./components/certified";
 import Review from "./components/Review";
-//import SMS from "./components/SMS";
 import Assessment from "./components/Assesment";
 import Footer from "./components/Footer";
 import Platform from "./components/PlatForm";
